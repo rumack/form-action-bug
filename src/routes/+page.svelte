@@ -25,7 +25,10 @@
 </script>
 
 <h1>Form action bug (with node 18.19)</h1>
-<!-- With node 18.19, the below form action hangs with use:enhance (will work without enhance) -->
+<!-- 
+With node 18.19 on Linux, the below form action hangs with use:enhance (will work without enhance) 
+Not an issue on Macbook
+-->
 <form action="?/send_html" method="POST" use:enhance>
     <input type="hidden" name="string1" bind:value={string_1}>
     <input type="hidden" name="string2" bind:value={string_2}>
